@@ -197,11 +197,26 @@ curl -X PUT http://localhost:4000/todos/[todo-id]
 # Delete todo
 curl -X DELETE http://localhost:4000/todos/[todo-id]
 ```
+# 6-Python Flask App
 
+Basit Flask uygulaması Docker ile container içinde çalışır.
+
+## Dosyalar
+
+- `app.py` — Flask uygulaması  
+- `requirements.txt` — Bağımlılıklar  
+- `Dockerfile` — Docker yapılandırması
+
+## Docker ile Çalıştırma
+
+```bash
+docker build -t python-app .
+docker run -p 3000:5000 python-app
 ## 🛠️ General Requirements
 
 - [Docker](https://docs.docker.com/get-docker/) must be installed
 - Each project should be run in its own directory
+Merhaba, Flask!
 
 ## 📝 Docker Commands Summary
 
